@@ -1,0 +1,51 @@
+@import "./../../../assets/style.scss";
+
+.screenB1-ctr {
+  padding-left: 20%;
+  .option-head {
+    padding-bottom: 2rem;
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+    text-align: left;
+  }
+  .option-list {
+    list-style: none;
+    margin-left: -3rem;
+    width: 40%;
+    text-align: left;
+    .option-elem {
+      font-size: 24px;
+      text-align: left;
+      padding: 12px;
+      font-weight: 500;
+      border: 2px solid transparent;
+      &.selected {
+        background-color: rgba(255, 255, 255, 0.14);
+      }
+      &:hover {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.14);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-screen) {
+  .screenB1-ctr {
+    padding-left: 10%;
+    .option-head {
+      padding-bottom: 1rem;
+      font-size: 21px;
+    }
+    .option-list {
+      margin-left: -2.5rem;
+      width: 75%;
+      .option-elem {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "./../../../assets/style.scss";
+
+.screenD-ctr {
+  height: 100%;
+  background-color: $login-bg-color;
+  animation: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s 1 bgColorChange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

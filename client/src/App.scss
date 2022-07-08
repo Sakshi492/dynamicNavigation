@@ -1,0 +1,19 @@
+@import "./assets/style.scss";
+
+.App {
+  text-align: center;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2.5rem;
+}
+@media only screen and (max-width: $mobile-med-screen) {
+  .App {
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: $mobile-xs-screen) {
+  .App {
+    line-height: 1rem;
+  }
+}

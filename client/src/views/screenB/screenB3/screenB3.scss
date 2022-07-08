@@ -1,0 +1,32 @@
+@import "./../../../assets/style.scss";
+
+.screenB3-ctr {
+  padding: 48px;
+  font-size: 24px;
+  text-align: left;
+  color: $white-text-color;
+  width: 70%;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: $mobile-med-screen) {
+  .screenB3-ctr {
+    line-height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: $mobile-screen) {
+  .screenB3-ctr {
+    padding: 24px;
+    font-size: 18px;
+    width: 90%;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: $mobile-xs-screen) {
+  .screenB3-ctr {
+    padding: 10px;
+    font-size: 16px;
+  }
+}

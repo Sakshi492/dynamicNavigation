@@ -1,0 +1,29 @@
+@import "../../../assets/style.scss";
+
+.screenB-ctr {
+  height: calc(100% - 4rem);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  .nav-arrow {
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+  }
+
+  animation: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s 1 bgColorChange;
+}
+
+@media only screen and (max-width: $mobile-screen) {
+  .screenB-ctr {
+    height: calc(100% - 2rem);
+    padding: 1rem;
+    overflow: auto;
+    .nav-arrow {
+      bottom: 1rem;
+      right: 1rem;
+    }
+  }
+}

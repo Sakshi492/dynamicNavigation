@@ -1,0 +1,38 @@
+@import "./../../../assets/style.scss";
+
+.screenA-ctr {
+  height: 100%;
+  background-color: $screenA-bg-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .error-fetch {
+    font-size: 32px;
+    color: $white-text-color;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: $mobile-med-screen) {
+  .screenA-ctr {
+    .error-fetch {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-screen) {
+  .screenA-ctr {
+    .error-fetch {
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-xs-screen) {
+  .screenA-ctr {
+    .error-fetch {
+      font-size: 12px;
+    }
+  }
+}

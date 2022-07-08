@@ -1,0 +1,125 @@
+@import "./../../assets/style.scss";
+
+.screenC-ctr {
+  height: 100%;
+  background-color: $screenC-bg-color;
+  animation: 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s 1 bgColorChange;
+  padding: 0 10rem 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  color: $white-text-color;
+  overflow: auto;
+  .nav-arrow {
+    top: 2.5rem;
+    left: 2.5rem;
+    position: absolute;
+  }
+  .screenB-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .screen-content {
+      text-align: left;
+      width: 60%;
+      .screen-head {
+        font-size: 24px;
+        font-weight: 800;
+        width: 50%;
+        text-transform: uppercase;
+        padding: 14px;
+        background-color: rgba(190, 173, 173, 0.347);
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
+      .screen-text {
+        font-size: 18px;
+        width: 100%;
+        font-weight: 500;
+        padding-top: 2rem;
+      }
+    }
+
+    .screen-loader {
+      width: 20%;
+      transform: scale3d(1, 1, 1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-med-screen) {
+  .screenC-ctr {
+    padding: 0 5rem 0 5rem;
+    .nav-arrow {
+      top: 1rem;
+      left: 1rem;
+    }
+    .screenB-inner {
+      .screen-content {
+        .screen-head {
+          font-size: 18px;
+        }
+        .screen-text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-screen) {
+  .screenC-ctr {
+    padding: 2rem;
+    height: calc(100% - 4rem);
+    justify-content: end;
+    .screenB-inner {
+      flex-direction: column;
+      .screen-content {
+        width: 100%;
+        .screen-head {
+          font-size: 18px;
+          width: 70%;
+        }
+        .screen-text {
+          font-size: 14px;
+          padding-top: 1rem;
+        }
+      }
+
+      .screen-loader {
+        width: 100%;
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-xs-screen) {
+  .screenC-ctr {
+    padding: 2rem;
+    height: calc(100% - 4rem);
+    justify-content: end;
+    .screenB-inner {
+      .screen-content {
+        .screen-head {
+          font-size: 14px;
+        }
+        .screen-text {
+          font-size: 12px;
+        }
+        transform: translateY(4rem);
+        overflow: auto;
+      }
+
+      .screen-loader {
+        transform: scale3d(0.75, 0.75, 0.75) translateY(4rem);
+      }
+    }
+  }
+}

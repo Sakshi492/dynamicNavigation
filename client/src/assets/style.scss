@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap");
+
+$screenA-bg-color: #c59700;
+
+$white-text-color: #ffffff;
+
+$screenC-bg-color: hsl(300, 19%, 43%);
+
+$screenD-bg-color: #61b3fb;
+
+$login-bg-color: #293a53;
+
+@keyframes bgColorChange {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Responsive media size
+$mobile-med-screen: 1100px;
+$mobile-screen: 600px;
+$mobile-xs-screen: 300px;

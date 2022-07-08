@@ -1,0 +1,68 @@
+@import "./../../../assets/style.scss";
+
+.screenB2-ctr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20%;
+  .option-head {
+    padding-bottom: 2rem;
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+    text-align: left;
+  }
+  .option-list {
+    list-style: none;
+    margin-left: -3rem;
+    width: 40%;
+    text-align: left;
+    font-weight: 500;
+    .option-elem {
+      padding: 12px;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      .option-input {
+        transform: scale3d(1.5, 1.5, 1.5);
+      }
+      &:hover {
+        .option-input {
+          cursor: pointer;
+          transform: scale3d(2, 2, 2);
+        }
+        cursor: pointer;
+      }
+      .option-label {
+        padding-left: 20px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-screen) {
+  .screenB2-ctr {
+    padding-left: 10%;
+    .option-head {
+      padding-bottom: 1rem;
+      font-size: 24px;
+    }
+    .option-list {
+      margin-left: -2.5rem;
+      width: 70%;
+      .option-elem {
+        .option-label {
+          padding-left: 20px;
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-xs-screen) {
+  .screenB2-ctr {
+    padding-left: 5%;
+  }
+}
